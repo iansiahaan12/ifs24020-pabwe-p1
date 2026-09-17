@@ -1,151 +1,158 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- ===== Meta Tags Dasar ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae Ian Kurniawan Siahaan">
+    <meta name="author" content="Ian Kurniawan Siahaan">
+    
     <title>Curriculum Vitae</title>
 </head>
 <body>
 
     <!-- ===== Navigasi Utama Antar Halaman ===== -->
-    <nav>
+    <nav aria-label="Navigasi Utama">
         <a href="index.html">IMDb Top 3 Movies</a> |
         <a href="blog.html">Dev Blogs</a> |
-        <a href="blog-detail.html">Blog Detail</a> |
         <a href="form.html">Form Pendaftaran</a> |
         <a href="cv.html">Curriculum Vitae</a>
     </nav>
-
-    <main>
+    
     <hr>
+    
+    <!-- ===== Konten Utama CV ===== -->
+    <main>
+        
+        <!-- Tabel utama untuk membagi layout menjadi 2 kolom (Kiri 40%, Kanan 60%) -->
+        <table width="100%" border="0" cellpadding="10" cellspacing="0">
+            <tr>
+                
+                <!-- ===== Kolom Kiri ===== -->
+                <td width="40%" valign="top">
+                    <!-- Foto Profil -->
+                    <img src="formal1.png" width="200" alt="Foto Formal Profil Ian Kurniawan Siahaan" />
 
-    <!-- Gunakan tabel utama agar konten kiri dan kanan sejajar (tanpa CSS) -->
-    <table width="100%" border="0" cellpadding="10" cellspacing="0">
-        <tr>
-            <!-- ===== Kolom Kiri ===== -->
-            <td width="40%" valign="top">
-                <!-- Sesuai deskripsi: Ukuran foto 200 -->
-                <img src="formal1.png" width="200" alt="Foto Profil">
+                    <!-- Bagian Pendidikan -->
+                    <h2>Pendidikan</h2>
+                    <hr />
+                    <p>
+                        <b>Sarjana Informatika</b> | IPK : 3.38/4.00<br />
+                        Institut Teknologi Del (2024 - Sekarang)
+                    </p>
+                    <ul>
+                        <li>SMA Negeri 1 Siborongborong</li>
+                        <li>SMP Santa Lusia Siborongborong</li>
+                        <li>SD Santa Lusia Siborongborong</li>
+                    </ul>
 
-                <!-- Sesuai deskripsi: Judul bagian menggunakan h2 -->
-                <h2>Pendidikan</h2>
-                <hr>
-                <p>
-                    <b>Sarjana Informatika</b> | IPK : 3.38/4.00<br>
-                    Institut Teknologi Del (2024 - Sekarang)
-                </p>
-                <!-- Sesuai deskripsi: Pendidikan menggunakan ul -->
-                <ul>
-                    <li>SMA Negeri 1 Siborongborong</li>
-                    <li>SMP Santa Lusia Siborongborong</li>
-                    <li>SD Santa Lusia Siborongborong</li>
-                </ul>
+                    <!-- Bagian Pengalaman -->
+                    <h2>Pengalaman</h2>
+                    <hr />
+                    <p>
+                        <b>Panitia PCA 2025</b> | Divisi Olahraga Panitia PCA (Program Cinta Almamater) IT Del 2025
+                    </p>
+                    <p>
+                        <b>Panitia Inaugurasi, Dies Natalis & Graduation</b> | Partisipasi sebagai Panitia PCA 2025<br />
+                    </p>
+                    <p>
+                        <b>Organisasi MPM</b> | Komisi C Majelis Permusyawaratan Mahasiswa 2025 - 2026
+                    </p>
+                    <p>
+                        <b>Organisasi HIMASTI</b> | Anggota Himpunan Mahasiswa Sarjana Informatika
+                    </p>
+                    <p>
+                        <b>Mentor Asrama</b> | Asrama Marie Currie Institut Teknologi Del 2026 - 2027
+                    </p>
 
-                <h2>Pengalaman</h2>
-                <hr>
-                <p>
-                    <b>Panitia PCA 2025</b> | Divisi Olahraga Panitia PCA (Program Cinta Almamater) IT Del 2025
-                </p>
-                <p>
-                    <b>Panitia Inaugurasi, Dies Natalis & Graduation</b> | Partisipasi sebagai Panitia PCA 2025
-                </p>
-                <p>
-                    <b>Organisasi MPM</b> | Komisi C Majelis Permusyawaratan Mahasiswa 2025 - 2026
-                </p>
-                <p>
-                    <b>Organisasi HIMASTI</b> | Anggota Himpunan Mahasiswa Sarjana Informatika
-                </p>
-                <p>
-                    <b>Mentor Asrama</b> | Asrama Marie Currie Institut Teknologi Del 2026 - 2027
-                </p>
+                    <!-- Bagian Proyek/Portfolio -->
+                    <h2>Proyek</h2>
+                    <hr />
+                    <ol>
+                        <li><b>Website</b> | Proyek Mata Kuliah PBO</li>
+                        <li><b>Battle Code</b> | Proyek Mata Kuliah ALSTRUDAT</li>
+                        <li><b>Database dan SQL</b> | Proyek Mata Kuliah BASDAT</li>
+                    </ol>
+                </td>
 
-                <h2>Portfolio / Proyek</h2>
-                <hr>
-                <!-- Sesuai deskripsi: Portfolio/Proyek menggunakan ol -->
-                <ol>
-                    <li><b>Website</b> | Proyek Mata Kuliah PBO</li>
-                    <li><b>Battle Code</b> | Proyek Mata Kuliah ALSTRUDAT</li>
-                    <li><b>Database dan SQL</b> | Proyek Mata Kuliah BASDAT</li>
-                </ol>
-            </td>
+                <!-- ===== Kolom Kanan ===== -->
+                <td width="60%" valign="top">
+                    <!-- Header Data Diri -->
+                    <header>
+                        <h1>Ian Kurniawan Siahaan</h1>
+                        <hr />
+                        <h3>Sarjana Informatika</h3>
+                    </header>
 
-            <!-- ===== Kolom Kanan ===== -->
-            <td width="60%" valign="top">
-                <!-- Sesuai deskripsi: Nama menggunakan h1 -->
-                <h1>Ian Kurniawan Siahaan</h1>
-                <hr>
+                    <!-- Kontak -->
+                    <h6>Email: iansiahaan009@gmail.com</h6>
+                    <h6>WA: +62 852 6229 4440</h6>
 
-                <!-- Sesuai deskripsi: Program Studi menggunakan h3 -->
-                <h3>Sarjana Informatika</h3>
+                    <!-- Deskripsi Diri Singkat -->
+                    <p>
+                        Saya adalah mahasiswa semester 5 jurusan Informatika di
+                        Institut Teknologi Del. Saya tertarik untuk mendalami peran
+                        sebagai Front-End Web Developer, sebagaimana tercermin dalam
+                        proyek-proyek perkuliahan saya di mana saya mengambil peran
+                        tersebut. Selain itu, saya juga mengikuti mata kuliah yang
+                        membantu saya mempelajari dan mempraktikkan cara menyusun
+                        studi kasus yang baik serta melakukan pengujian secara
+                        efektif.
+                    </p>
 
-                <!-- Sesuai deskripsi: Email dan WA dibungkus oleh h6 -->
-                <h6>Email: iansiahaan009@gmail.com</h6>
-                <h6>WA: +62 852 6229 4440</h6>
+                    <!-- Bagian Keahlian Utama -->
+                    <h2>Keahlian</h2>
+                    <hr />
 
-                <p>
-                    Saya adalah mahasiswa semester 5 jurusan Informatika di
-                    Institut Teknologi Del. Saya tertarik untuk mendalami peran
-                    sebagai Front-End Web Developer, sebagaimana tercermin dalam
-                    proyek-proyek perkuliahan saya di mana saya mengambil peran
-                    tersebut. Selain itu, saya juga mengikuti mata kuliah yang
-                    membantu saya mempelajari dan mempraktikkan cara menyusun
-                    studi kasus yang baik serta melakukan pengujian secara
-                    efektif.
-                </p>
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Kotlin</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                    </ul>
 
-                <h2>Keahlian</h2>
-                <hr>
+                    <h3>Framework</h3>
+                    <ul>
+                        <li>Android Compose</li>
+                        <li>Flask</li>
+                        <li>Laravel</li>
+                        <li>NextJS</li>
+                        <li>ReactJS</li>
+                    </ul>
 
-                <!-- Sesuai deskripsi: Keahlian menggunakan ul -->
-                <h3>Programming</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Kotlin</li>
-                    <li>PHP</li>
-                    <li>Python</li>
-                </ul>
-
-                <h3>Framework</h3>
-                <ul>
-                    <li>Android Compose</li>
-                    <li>Flask</li>
-                    <li>Laravel</li>
-                    <li>NextJS</li>
-                    <li>ReactJS</li>
-                </ul>
-
-                <h3>Tools</h3>
-                <ul>
-                    <li>Katalon</li>
-                    <li>Visual Paradigm</li>
-                    <li>Visual Studio Code</li>
-                </ul>
-
-                <h2>Sertifikat & Penghargaan</h2>
-                <hr>
-                <!-- Sesuai deskripsi: Sertifikat menggunakan ol -->
-                <ol>
-                    <li>
-                        <b>Modules Taken – Dicoding (2025)</b>: Learning Basic Artificial Intelligence (AI)
-                    </li>
-                    <li>
-                        <b>PENA Competition (2025)</b>: Received the Favorite Poster Award and Received the Bronze Medal in the Education Category at Pekan Essay Nasional 2
-                    </li>
-                    <li>
-                        <b>Soft Skills</b>: Problem solving, presentation skill, good comunication, good time management, good teamwork
-                    </li>
-                    <li>
-                        <b>Hard Skills</b>: SQL, Scrum, Canva, Software Development Life Cycle (SDLC), Create test cases and UAT, API, Database, HTML, C, Java, JavaScript
-                    </li>
-                    <li>
-                        <b>Interest</b>: Interest in front-end development, user interface (UI) design, artificial intelligence, and software engineering, with a passion for developing interactive and user-friendly applications
-                    </li>
-                </ol>
-            </td>
-        </tr>
-    </table>
-    </main>
-
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Katalon</li>
+                        <li>Visual Paradigm</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                    
+                    <!-- Bagian Sertifikat dan Pengalaman Lainnya -->
+                    <h2>Penghargaan & Pengalaman Lainnya</h2>
+                    <hr />
+                    <ol>
+                        <li>
+                            <b>Modules Taken – Dicoding (2025)</b>: Learning Basic Artificial Intelligence (AI)
+                        </li>
+                        <li>
+                            <b>PENA Competition (2025)</b>: Received the Favorite Poster Award and Received the Bronze Medal in the Education Category at Pekan Essay Nasional 2
+                        </li>
+                        <li>
+                            <b>Soft Skills</b>: Problem solving, presentation skill, good comunication, good time management, good teamwork
+                        </li>
+                        <li>
+                            <b>Hard Skills</b>: SQL, Scrum, Canva, Software Development Life Cycle (SDLC), Create test cases and UAT, API, Database, HTML, C, Java, JavaScript
+                        </li>
+                        <li>
+                            <b>Interest</b>: Interest in front-end development, user interface (UI) design, artificial intelligence, and software engineering, with a passion for developing interactive and user-friendly applications
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        
+    </main>  
 </body>
 </html>

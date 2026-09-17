@@ -1,113 +1,128 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- ===== Meta Tags Dasar ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Halaman Form Pendaftaran Akun - Praktik HTML">
-    <meta name="author" content="Delcom Notes">
+    <meta name="description" content="Halaman form pendaftaran akun baru">
+    <meta name="author" content="Ian Kurniawan Siahaan">
+    
     <title>Form Pendaftaran Akun</title>
 </head>
 <body>
 
     <!-- ===== Navigasi Utama Antar Halaman ===== -->
-    <nav>
+    <nav aria-label="Navigasi Utama">
         <a href="index.html">IMDb Top 3 Movies</a> |
         <a href="blog.html">Dev Blogs</a> |
-        <a href="blog-detail.html">Blog Detail</a> |
         <a href="form.html">Form Pendaftaran</a> |
         <a href="cv.html">Curriculum Vitae</a>
     </nav>
 
-    <main>
-
     <hr>
 
-    <h1>Form Pendaftaran Akun</h1>
+    <!-- ===== Konten Utama ===== -->
+    <main>
 
-    <!-- ===== Form Pendaftaran ===== -->
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Daftar Akun</legend>
+        <header>
+            <h1>Form Pendaftaran Akun</h1>
+        </header>
 
-            <p>
-                <label for="nama">Nama Lengkap:</label>
-                <input type="text" id="nama" name="nama" required>
-            </p>
+        <!-- ===== Form Pendaftaran ===== -->
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Daftar Akun</legend>
 
-            <hr>
+                <!-- Input Nama Lengkap -->
+                <p>
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </p>
 
-            <p>
-                Jenis Kelamin:
-                <input type="radio" id="laki" name="jenis_kelamin" value="Laki-Laki" required>
-                <label for="laki">Laki-Laki</label>
-                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
-                <label for="perempuan">Perempuan</label>
-            </p>
+                <hr>
 
-            <hr>
+                <!-- Pilihan Jenis Kelamin (Radio Button) -->
+                <p>
+                    Jenis Kelamin:
+                    <input type="radio" id="laki" name="jenis_kelamin" value="Laki-Laki" required>
+                    <label for="laki">Laki-Laki</label>
+                    
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </p>
 
-            <p>
-                <label for="tempat_lahir">Tempat Lahir:</label>
-                <input type="text" id="tempat_lahir" name="tempat_lahir" required>
-            </p>
+                <hr>
 
-            <hr>
+                <!-- Input Tempat dan Tanggal Lahir -->
+                <p>
+                    <label for="tempat_lahir">Tempat Lahir:</label>
+                    <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+                </p>
 
-            <p>
-                <label for="tanggal_lahir">Tanggal Lahir:</label>
-                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
-            </p>
+                <hr>
 
-            <hr>
+                <p>
+                    <label for="tanggal_lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                </p>
 
-            <p>
-                <label for="agama">Agama:</label>
-                <select id="agama" name="agama" required>
-                    <option value="">--- Pilih Agama ---</option>
-                    <option value="Islam">Islam</option>
-                    <option value="Katolik">Katolik</option>
-                    <option value="Protestan">Protestan</option>
-                    <option value="Hindu">Hindu</option>
-                    <option value="Buddha">Buddha</option>
-                    <option value="Konghucu">Konghucu</option>
-                </select>
-            </p>
+                <hr>
 
-            <hr>
+                <!-- Pilihan Agama (Dropdown/Select) -->
+                <p>
+                    <label for="agama">Agama:</label>
+                    <select id="agama" name="agama" required>
+                        <option value="">--- Pilih Agama ---</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Protestan">Protestan</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Konghucu">Konghucu</option>
+                    </select>
+                </p>
 
-            <p>
-                Hobi:
-                <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
-                <label for="olahraga">Olahraga</label>
-                <input type="checkbox" id="membaca" name="hobi" value="Membaca">
-                <label for="membaca">Membaca</label>
-                <input type="checkbox" id="ngoding" name="hobi" value="Ngoding">
-                <label for="ngoding">Ngoding</label>
-            </p>
+                <hr>
 
-            <hr>
+                <!-- Pilihan Hobi (Checkbox) -->
+                <p>
+                    Hobi:
+                    <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                    <label for="olahraga">Olahraga</label>
+                    
+                    <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+                    <label for="membaca">Membaca</label>
+                    
+                    <input type="checkbox" id="ngoding" name="hobi" value="Ngoding">
+                    <label for="ngoding">Ngoding</label>
+                </p>
 
-            <p>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </p>
+                <hr>
 
-            <hr>
+                <!-- Input Password -->
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </p>
 
-            <p>
-                <input type="checkbox" id="setuju" name="setuju" required>
-                <label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
-            </p>
+                <hr>
 
-            <hr>
+                <!-- Persetujuan Kebijakan -->
+                <p>
+                    <input type="checkbox" id="setuju" name="setuju" required>
+                    <label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
+                </p>
 
-            <p>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
-            </p>
+                <hr>
 
-        </fieldset>
-    </form>
+                <!-- Tombol Aksi Form -->
+                <p>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </p>
+
+            </fieldset>
+        </form>
 
     </main>
 

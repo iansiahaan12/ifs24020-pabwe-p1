@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- ===== Meta Tags Dasar ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Halaman Detail Blog - Praktik HTML">
-    <meta name="author" content="Delcom Notes">
+    <meta name="description" content="Detail Artikel Blog - How to Deploy a Web Application Using Docker and NGINX on Your Own Server">
+    <meta name="author" content="Ian Kurniawan Siahaan">
+    
     <title>How to Deploy a Web Application Using Docker and NGINX</title>
 </head>
 <body>
 
     <!-- ===== Navigasi Utama Antar Halaman ===== -->
-    <nav>
+    <nav aria-label="Navigasi Utama">
         <a href="index.html">IMDb Top 3 Movies</a> |
         <a href="blog.html">Dev Blogs</a> |
-        <a href="blog-detail.html">Blog Detail</a> |
         <a href="form.html">Form Pendaftaran</a> |
         <a href="cv.html">Curriculum Vitae</a>
     </nav>
 
+    <hr>
+
+    <!-- ===== Konten Utama ===== -->
     <main>
 
-    <hr>
+        <!-- ===== Cover Artikel ===== -->
+        <img src="cover.png" width="100%" alt="Ilustrasi Cover untuk artikel Docker dan NGINX">
 
-    <!-- ===== Cover Blog ===== -->
-    <img src="cover.png" width="100%" alt="Cover artikel Docker dan NGINX">
+        <!-- ===== Informasi Penulis Artikel ===== -->
+        <table border="0" cellpadding="4" cellspacing="0">
+            <tr>
+                <td valign="middle">
+                    <img src="blog3.jpeg" width="32" height="32" alt="Foto profil penulis artikel Vishnu Satheesh">
+                </td>
+                <td valign="middle">
+                    <p><span><b>Vishnu Satheesh</b></span><br /><span>Posted on May 31</span></p>
+                </td>
+            </tr>
+        </table>
 
-    <!-- ===== Informasi Author ===== -->
-    <table border="0" cellpadding="4" cellspacing="0">
-        <tr>
-            <td valign="middle">
-                <img src="blog3.jpeg" width="32" height="32" alt="Foto profil Vishnu Satheesh">
-            </td>
-            <td valign="middle">
-                <p><span><b>Vishnu Satheesh</b></span><br /><span>Posted on May 31</span></p>
-            </td>
-        </tr>
-    </table>
+        <!-- ===== Judul Artikel ===== -->
+        <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
+        <p><span>#webdev</span>&nbsp;&nbsp;<span>#devops</span></p>
 
-    <!-- ===== Judul Blog ===== -->
-    <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
-    <p><span>#webdev</span>&nbsp;&nbsp;<span>#devops</span></p>
+        <hr>
 
-    <hr>
+        <!-- ===== Isi Artikel ===== -->
+        <article>
+            <p>Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.</p>
+            <p>In this blog, I'll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server.</p>
 
-    <!-- ===== Konten Blog ===== -->
-    <p>Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.</p>
-    <p>In this blog, I'll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server.</p>
+            <h2>Step 1: Setup Docker</h2>
+            <p>First, let's set up Docker. I'm using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.</p>
+            <p>
+                Dockerfile:<br />
+                FROM node:20-alpine<br />
+                WORKDIR /app<br />
+                COPY package*.json ./<br />
+                RUN npm install<br />
+                COPY . .<br />
+                CMD [ "npm", "start" ]
+            </p>
 
-    <h2>Step 1: Setup Docker</h2>
-    <p>First, let's set up Docker. I'm using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.</p>
-    <p>
-        Dockerfile:<br />
-        FROM node:20-alpine<br />
-        WORKDIR /app<br />
-        COPY package*.json ./<br />
-        RUN npm install<br />
-        COPY . .<br />
-        CMD [ "npm", "start" ]
-    </p>
+            <h2>Step 2: Build and Run the Docker Container (on your server)</h2>
+            <p>Once you've created your Dockerfile, the next step is to build your Docker image and run it to make sure everything is working as expected.</p>
 
-    <h2>Step 2: Build and Run the Docker Container (on your server)</h2>
-    <p>Once you've created your Dockerfile, the next step is to build your Docker image and run it to make sure everything is working as expected.</p>
+            <h2>Conclusion</h2>
+            <p>Deploying your web application using Docker and NGINX on your own server might sound intimidating at first, but once you break it down, it's quite manageable.</p>
+            <p>By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.</p>
+        </article>
 
-    <h2>Conclusion</h2>
-    <p>Deploying your web application using Docker and NGINX on your own server might sound intimidating at first, but once you break it down, it's quite manageable.</p>
-    <p>By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.</p>
+        <hr>
 
-    <hr>
-
-    <!-- ===== Kolom Komentar ===== -->
-    <h2>Top comments (0)</h2>
-    <table border="0" cellpadding="4" cellspacing="0">
-        <tr>
-            <td valign="middle">
-                <img src="formal.png" width="32" height="32" alt="Foto profil pengguna">
-            </td>
-            <td valign="middle">
-                <textarea rows="3" cols="50" placeholder="Add to the discussion"></textarea>
-            </td>
-        </tr>
-    </table>
+        <!-- ===== Bagian Komentar ===== -->
+        <section>
+            <h2>Top comments (0)</h2>
+            <table border="0" cellpadding="4" cellspacing="0">
+                <tr>
+                    <td valign="middle">
+                        <img src="formal.png" width="32" height="32" alt="Avatar profil untuk menambah komentar">
+                    </td>
+                    <td valign="middle">
+                        <!-- Aksesibilitas: Menambahkan title pada textarea -->
+                        <textarea rows="3" cols="50" placeholder="Add to the discussion" title="Kolom input komentar"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
     </main>
 
